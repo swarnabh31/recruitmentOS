@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  min-height: 100dvh;
+  background-color: #020617; /* slate-950 — no white flash/overscroll seam */
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+@theme {
+  --animate-fadeIn: fadeIn 0.35s ease-out both;
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+}
+
+@layer utilities {
+  .report-container {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #030712;
+    color: #34d399;
+    padding: 1.5rem;
+    border: 1px solid #059669;
+    border-radius: 0.75rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+  }
+
+  /* Thin themed scrollbar for AI-output scroll areas (dark track, purple thumb) */
+  .scrollbar-thin-themed {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(129, 140, 248, 0.45) rgba(15, 23, 42, 0.6);
+  }
+  .scrollbar-thin-themed::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollbar-thin-themed::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+    border-radius: 9999px;
+  }
+  .scrollbar-thin-themed::-webkit-scrollbar-thumb {
+    background: rgba(129, 140, 248, 0.45);
+    border-radius: 9999px;
+  }
+  .scrollbar-thin-themed::-webkit-scrollbar-thumb:hover {
+    background: rgba(129, 140, 248, 0.7);
+  }
+}

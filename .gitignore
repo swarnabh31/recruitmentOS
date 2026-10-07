@@ -1,0 +1,28 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Application data & user content (do not publish)
+data/
+jd/
+demo/
+promo/
+Resume/
+resume/
+
+# Docs / roadmap (private)
+DOCUMENTATION.md
+PRODUCTION_ROADMAP.md
+
+# Leftover editor artifact folder (not used by the app)
+assets/
+
+# OS noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+{
+  "name": "AI Recruitment OS",
+  "description": "An AI-Native Recruitment Operating System with Job Management, Candidate CRM, Kanban Pipeline, AI Resume Intelligence, Sourcing Agent, Interview Assistant, and Multi-Agent Copilot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_OLLAMA_API"]
+}
